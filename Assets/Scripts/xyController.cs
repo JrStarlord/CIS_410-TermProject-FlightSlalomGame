@@ -38,7 +38,7 @@ public class xyController : MonoBehaviour
             rb.velocity = -transform.forward * m_Speed;
         }
 
-       /* if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             //Rotate the sprite about the Y axis in the positive direction
             transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * m_Speed, Space.World);
@@ -48,7 +48,7 @@ public class xyController : MonoBehaviour
         {
             //Rotate the sprite about the Y axis in the negative direction
             transform.Rotate(new Vector3(0, -1, 0) * Time.deltaTime * m_Speed, Space.World);
-        }*/
+        }
 
 
 
