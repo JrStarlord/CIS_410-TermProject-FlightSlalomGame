@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private float forwardAcceleration = 2.5f, strafeAcceleration = 1f, hoverAccelereatoin = 2f;
 
     public float lookRotateSpeed = 25f;
-    private Vector2 lookInput, screenCenter, mouseDistance;
+    private Vector2 lookInput, screenCenter, ShipDistance;
 
     private float rollInput;
     public float rollSpeed = 90f, rollAcceleration = 3.5f;
@@ -25,17 +25,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lookInput.x = Input.mousePosition.x;
-        lookInput.y = Input.mousePosition.y;
+        lookInput.x = Input.GetAxisRaw("Horizontal");
+        lookInput.y = Input.GetAxisRaw("Hover");
 
-        mouseDistance.x = (lookInput.x - screenCenter.x) / (screenCenter.y);
-        mouseDistance.y = (lookInput.y - screenCenter.y) / (screenCenter.y);
+        ShipDistance.x = (lookInput.x - screenCenter.x) / (screenCenter.y);
+        ShipDistance.y = (lookInput.y - screenCenter.y) / (screenCenter.y);
 
-        mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
+        ShipDistance = Vector2.ClampMagnitude(ShipDistance, 1f);
 
         rollInput = Mathf.Lerp(rollInput, Input.GetAxisRaw("Roll"), rollAcceleration * Time.deltaTime);
 
-        transform.Rotate(-mouseDistance.y * lookRotateSpeed * Time.deltaTime, mouseDistance.x * lookRotateSpeed * Time.deltaTime, rollInput * rollSpeed * Time.deltaTime, /*Direction = ships direciton*/ Space.Self);
+        //transform.Rotate(-ShipDistance.y  * lookRotateSpeed * Time.deltaTime, ShipDistance.x * lookRotateSpeed * Time.deltaTime, rollInput * rollSpeed * Time.deltaTime, /*Direction = ships direciton*/ Space.Self);
 
         activeForwardSpeed = Mathf.Lerp(activeForwardSpeed, forwardSpeed, forwardAcceleration * Time.deltaTime);
         activeStrafeSpeed = Mathf.Lerp(activeStrafeSpeed, Input.GetAxisRaw("Horizontal") * strafeSpeed, strafeAcceleration * Time.deltaTime);
@@ -43,5 +43,6 @@ public class PlayerController : MonoBehaviour
 
         transform.position += transform.forward * activeForwardSpeed * Time.deltaTime;
         transform.position += (transform.right * activeStrafeSpeed * Time.deltaTime) + (transform.up * activeHoverSpeed * Time.deltaTime);
+       
     }
 }
