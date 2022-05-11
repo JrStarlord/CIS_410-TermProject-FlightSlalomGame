@@ -15,7 +15,7 @@ public class MapGenerator : MonoBehaviour
         if (creatingSection == false)
         {
             creatingSection = true;
-            startCoroutine(GenerateSection());
+            StartCoroutine(GenerateSection());
         }
     }
 
