@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GroundTile : MonoBehaviour
 {
     GroundSpawner groundSpawner;
 
@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     void OnTriggerExit (Collider other)
     {
         groundSpawner.SpawnTile();
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 15);
     }
 
 }
