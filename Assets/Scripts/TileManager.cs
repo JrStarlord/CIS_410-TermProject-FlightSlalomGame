@@ -7,14 +7,12 @@ public class TileManager : MonoBehaviour
     public GameObject[] tilePrefabs;
 
     private Transform playerTransform;
-    private float spawnZ = -480.0f;
+    private float spawnZ = 0.0f;
     private float tileLength = 60.0f;
-
     private int numTilesOnScreen = 8;
-
     private List<GameObject> activeTiles = new List<GameObject>();
-
-    private float safeZone = 80.0f;
+    private float safeZone = 20.0f;
+    private int lastPrefabIndex = 0;
 
     void Start()
     {
@@ -22,7 +20,10 @@ public class TileManager : MonoBehaviour
 
         for (int i = 0; i < numTilesOnScreen; i++)
         {
-            SpawnTile();
+            if (i < 2)
+                SpawnTile(0);
+            else
+                SpawnTile();
 
         }
 
@@ -47,10 +48,28 @@ public class TileManager : MonoBehaviour
     private void SpawnTile(int prefabIndex = -1)
     {
         GameObject goGoGadgit;
-        goGoGadgit = Instantiate(tilePrefabs[0]) as GameObject;
+        if (prefabIndex == -1)
+            goGoGadgit = Instantiate(tilePrefabs[RandomPrefabIndex()]) as GameObject;
+        else
+            goGoGadgit = Instantiate(tilePrefabs[prefabIndex]) as GameObject;
+
         goGoGadgit.transform.SetParent(transform);
         goGoGadgit.transform.position = Vector3.forward * spawnZ;
         spawnZ += tileLength;
         activeTiles.Add(goGoGadgit);
+    }
+    private int RandomPrefabIndex()
+    {
+        if (tilePrefabs.Length <= 1)
+        {
+            return 0;
+        }
+        int randomIndex = lastPrefabIndex;
+        while (randomIndex == lastPrefabIndex)
+        {
+            randomIndex = Random.Range(0, tilePrefabs.Length);
+        }
+        lastPrefabIndex = randomIndex;
+        return randomIndex;
     }
 }
