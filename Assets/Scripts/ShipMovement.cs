@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ public class ShipMovement : MonoBehaviour
 {
     public float movementSpeed = 10.0f;
     public int invert = -1; //-1 to invert controlls, place as option in menu.
+
 
     // Start is called before the first frame update
     void Start()
