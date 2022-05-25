@@ -642,7 +642,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 3000
   field of view: 30.000002
   orthographic: 0
   orthographic size: 5
@@ -1315,11 +1315,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 919132149155446097, guid: 5111bb095b16a5c4680ab09aae001cd0, type: 3}
-  - {fileID: 919132149155446097, guid: dbb4f8502608e464996a78b78b1b94cb, type: 3}
-  - {fileID: 919132149155446097, guid: f43cd3d0d0ae3694389444c518fb7161, type: 3}
-  - {fileID: 919132149155446097, guid: b446670158545f640b179deebc7366bc, type: 3}
-  - {fileID: 919132149155446097, guid: be0a4d1261fd09f4fa96a87da792acc4, type: 3}
+  - {fileID: 756637490634089013, guid: c6cdccd1d6fd75f4c8d2c425207ec4e0, type: 3}
+  - {fileID: 6585723108315401860, guid: 3592a2fa2173c16458244763c1aaeb52, type: 3}
+  - {fileID: 8600419278892986613, guid: b338a8c43fdf710409ab08aa01a9050f, type: 3}
+  - {fileID: 6125873152750188468, guid: 6d52f167da0d3b1409187d2745f52d98, type: 3}
+  - {fileID: 3934007426057916219, guid: 5f51d1fa73c22dd4fb7b51fca039a360, type: 3}
   Portal: {fileID: 460477550251410021, guid: ea7a3d40e0366fb4d91a3a674724640f, type: 3}
   tileLength: 1000
 --- !u!4 &1516231302
