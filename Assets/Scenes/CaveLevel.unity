@@ -198,7 +198,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.2
+  m_Intensity: 1.6
   m_Range: 1200
   m_SpotAngle: 75.4
   m_InnerSpotAngle: 21.80208
@@ -256,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 121.21212}
+  m_LocalPosition: {x: 0, y: 0, z: 27}
   m_LocalScale: {x: 1.5151515, y: 1.5151515, z: 1.5151515}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -659,13 +659,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 6607028086533428567, guid: 123d677094683104bbee766a2017c64c, type: 3}
-  - {fileID: 3871703910835024495, guid: 9a6113f8044917e428bb7600b00286c6, type: 3}
-  - {fileID: 5654189758979137929, guid: aa2f9cdcfbd86034c88cd877b05da684, type: 3}
-  - {fileID: 1482354852067548382, guid: 8b420552bcc6d0040ade99c44698331e, type: 3}
-  - {fileID: 673256523719176427, guid: fcebbb35c6defe344b650361bc30f8ae, type: 3}
+  - {fileID: 7509569421141641044, guid: 379b05d235536064688cab18c92e1157, type: 3}
+  - {fileID: 2184567133912692130, guid: 021e89f383529eb40841ff045391b1c7, type: 3}
+  - {fileID: 4126099662664942485, guid: 333d5b79c4a7f154bb8953a08b47cfd0, type: 3}
+  - {fileID: 1591843654534369133, guid: adf8ea96d40a2f943a1b459c809f5a2c, type: 3}
+  - {fileID: 2398067377996350475, guid: 2dc2d87b046f7984f8107727f5a0cf94, type: 3}
   Portal: {fileID: 460477550251410021, guid: ea7a3d40e0366fb4d91a3a674724640f, type: 3}
-  tileLength: 1000
+  tileLength: 950
 --- !u!4 &1516231302
 Transform:
   m_ObjectHideFlags: 0
