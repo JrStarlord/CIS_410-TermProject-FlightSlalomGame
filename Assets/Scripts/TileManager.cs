@@ -5,14 +5,17 @@ using UnityEngine;
 public class TileManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
+    public GameObject Portal;
 
     private Transform playerTransform;
     private float spawnZ = 0.0f;
-    private float tileLength = 60.0f;
-    private int numTilesOnScreen = 8;
+    public float tileLength;
+    private int numTilesOnScreen = 6;
     private List<GameObject> activeTiles = new List<GameObject>();
-    private float safeZone = 20.0f;
+    private float safeZone = 600.0f;
     private int lastPrefabIndex = 0;
+
+    private int tileCount = 0;
 
     void Start()
     {
@@ -47,16 +50,29 @@ public class TileManager : MonoBehaviour
 
     private void SpawnTile(int prefabIndex = -1)
     {
-        GameObject goGoGadgit;
+        GameObject goGoGadgit;        
         if (prefabIndex == -1)
             goGoGadgit = Instantiate(tilePrefabs[RandomPrefabIndex()]) as GameObject;
         else
             goGoGadgit = Instantiate(tilePrefabs[prefabIndex]) as GameObject;
 
+        if (tileCount > 5)
+        {
+            goGoGadgit = Instantiate(Portal) as GameObject;
+        }
+
         goGoGadgit.transform.SetParent(transform);
-        goGoGadgit.transform.position = Vector3.forward * spawnZ;
+        //goGoGadgit.transform.position = Vector3.forward * spawnZ;
+        goGoGadgit.transform.position = new Vector3(Vector3.forward.x * spawnZ, Vector3.forward.y * spawnZ - 20, Vector3.forward.z * spawnZ);
+
+
+
+
+
+
         spawnZ += tileLength;
         activeTiles.Add(goGoGadgit);
+        tileCount++;
     }
     private int RandomPrefabIndex()
     {

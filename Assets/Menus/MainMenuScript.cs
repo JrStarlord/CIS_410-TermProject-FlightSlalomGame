@@ -24,7 +24,7 @@ public class MainMenuScript : MonoBehaviour
     public void PlayNowButton()
     {
         Time.timeScale = 1;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 Concept");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("CanyonLevel");
         /*MainMenu.SetActive(false);
         BackgroundImage.SetActive(false);
         Time.timeScale = 1;*/
@@ -64,12 +64,12 @@ public class MainMenuScript : MonoBehaviour
         {
             case 1:
                 Time.timeScale = 1;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 Concept");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("CanyonLevel");
                 break;
 
             case 2:
                 Time.timeScale = 1;
-                // load second level scene
+                UnityEngine.SceneManagement.SceneManager.LoadScene("CaveLevel");
                 break;
 
             case 3:

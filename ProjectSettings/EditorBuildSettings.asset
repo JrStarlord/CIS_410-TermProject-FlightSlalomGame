@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Canyon.unity
-    guid: 1eaffe3808a7b4345a016021f84c5a70
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ede8bb0a72dbf8249bc716fecc44f670
+  - enabled: 1
+    path: Assets/Scenes/CanyonLevel.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CaveLevel.unity
+    guid: 519ebe5d8adc000489719a0b52c77d33
   - enabled: 1
     path: Assets/Scenes/EndingMenu.unity
     guid: b38b704bf69811842a6168ef152b5c5d
-  - enabled: 1
-    path: Assets/Scenes/Level 1 Concept.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
