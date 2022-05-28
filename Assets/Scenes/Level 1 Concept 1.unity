@@ -1315,12 +1315,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 919132149155446097, guid: 9bb6979ba605b504fb74537ee0fcb248, type: 3}
-  - {fileID: 919132149155446097, guid: de3e99323b0ef66449190d62dd5c3428, type: 3}
-  - {fileID: 919132149155446097, guid: e98705e85ba51c742bbaf14554710a34, type: 3}
-  - {fileID: 919132149155446097, guid: 8349a2431c26620488538e77e55f257e, type: 3}
-  - {fileID: 919132149155446097, guid: 7336fd7113b127244b8e209de71081f7, type: 3}
-  tileLength: 1000
+  - {fileID: 1805671373530018206, guid: d2fb2d98674a03343aa7d784fd52aaa1, type: 3}
+  - {fileID: 1805671373530018206, guid: 8f390e124a76ce649907698564acd123, type: 3}
+  - {fileID: 1805671373530018206, guid: d492be89cd1e0674b913a3ea2cdd1d83, type: 3}
+  - {fileID: 1805671373530018206, guid: 8aca90fc242764f419b5acd31a74c509, type: 3}
+  - {fileID: 1805671373530018206, guid: e515008cb72485b458f38f55f24c14ea, type: 3}
+  Portal: {fileID: 460477550251410021, guid: ea7a3d40e0366fb4d91a3a674724640f, type: 3}
+  tileLength: 60
 --- !u!4 &1516231302
 Transform:
   m_ObjectHideFlags: 0
