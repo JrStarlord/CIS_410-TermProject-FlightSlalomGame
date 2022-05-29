@@ -5,7 +5,7 @@ using UnityEngine;
 public class TileManager : MonoBehaviour
 {
     public GameObject[] tilePrefabs;
-    public GameObject Portal;
+    public int tileVerticalOffset = 20;
 
     private Transform playerTransform;
     private float spawnZ = 0.0f;
@@ -56,18 +56,9 @@ public class TileManager : MonoBehaviour
         else
             goGoGadgit = Instantiate(tilePrefabs[prefabIndex]) as GameObject;
 
-        if (tileCount > 5)
-        {
-            goGoGadgit = Instantiate(Portal) as GameObject;
-        }
 
         goGoGadgit.transform.SetParent(transform);
-        //goGoGadgit.transform.position = Vector3.forward * spawnZ;
-        goGoGadgit.transform.position = new Vector3(Vector3.forward.x * spawnZ, Vector3.forward.y * spawnZ - 20, Vector3.forward.z * spawnZ);
-
-
-
-
+        goGoGadgit.transform.position = new Vector3(Vector3.forward.x * spawnZ, Vector3.forward.y * spawnZ - tileVerticalOffset, Vector3.forward.z * spawnZ);
 
 
         spawnZ += tileLength;
