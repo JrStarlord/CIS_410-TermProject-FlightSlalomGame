@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 192991277181080047}
   - component: {fileID: 2628241887513914000}
   - component: {fileID: 6575267664470379900}
+  - component: {fileID: 6992541404193541861}
+  - component: {fileID: 3518441306910686471}
   m_Layer: 0
   m_Name: Landscape.009
   m_TagString: Untagged
@@ -83,6 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6992541404193541861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2383939662300538584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &3518441306910686471
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2383939662300538584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: -8453530524296755097, guid: 32cae2e3528f104489d1994474444750, type: 3}
 --- !u!1 &3098309462156734851
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +156,8 @@ GameObject:
   - component: {fileID: 2633083589148853965}
   - component: {fileID: 351189148140841734}
   - component: {fileID: 3115295554930620217}
+  - component: {fileID: 6553776611493891609}
+  - component: {fileID: 5045022168110756326}
   m_Layer: 0
   m_Name: Landscape.008
   m_TagString: Untagged
@@ -200,6 +230,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6553776611493891609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861816718949436566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &5045022168110756326
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861816718949436566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: -6749561369117414242, guid: 32cae2e3528f104489d1994474444750, type: 3}
 --- !u!1 &8354897615480137239
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +267,8 @@ GameObject:
   - component: {fileID: 4820464934060961291}
   - component: {fileID: 1645624717744757449}
   - component: {fileID: 1975150041431083140}
+  - component: {fileID: 1673841888057821104}
+  - component: {fileID: 4288016880782826000}
   m_Layer: 0
   m_Name: Landscape_plane.004
   m_TagString: Untagged
@@ -283,3 +341,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1673841888057821104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8354897615480137239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &4288016880782826000
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8354897615480137239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: -8350582446941462694, guid: 32cae2e3528f104489d1994474444750, type: 3}
