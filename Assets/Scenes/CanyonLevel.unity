@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 705507994}
+  m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.042370036, g: 0.037706017, b: 0.044823453, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -195,12 +195,12 @@ Light:
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 1
+  m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 1000
+  m_SpotAngle: 70.1
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -255,14 +255,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalScale: {x: 1.5151513, y: 1.5151513, z: 1.5151514}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_Father: {fileID: 2025143992}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997797954
 GameObject:
@@ -508,7 +508,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 2025143992}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &997797959
 MonoBehaviour:
@@ -708,13 +708,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 3098309462156734851, guid: 30504e0bc98840742ae9fe3194107f14, type: 3}
-  - {fileID: 6775190398639648168, guid: 24bf13d8fca96454588e44ce4fefb988, type: 3}
-  - {fileID: 3520299801214034935, guid: a5f92b5296c1b294e919f7d593140026, type: 3}
-  - {fileID: 2864904733189095036, guid: 1a15ac01b0fb92240a702bf965051d32, type: 3}
-  - {fileID: 1842273627207472889, guid: 8a86d7b1ba8a9fc4893364b966587cd1, type: 3}
-  Portal: {fileID: 460477550251410021, guid: ea7a3d40e0366fb4d91a3a674724640f, type: 3}
-  tileLength: 1000
+  - {fileID: 5656611619856272252, guid: 2081e9865117ead4db2f2c2f50013676, type: 3}
+  - {fileID: 3769877203867146218, guid: 85a53898c87016d47b2671300f041199, type: 3}
+  - {fileID: 5510677558801921354, guid: 4bfc66a053d464342b6c2a5ec1119251, type: 3}
+  - {fileID: 3089910557509288765, guid: eec905ec7ecca46449ffd7c1a5036bf2, type: 3}
+  - {fileID: 627191054249089439, guid: 5af29cfc522ca52408b3ca26fa11c79c, type: 3}
+  - {fileID: 3244356701411595139, guid: c6695c80a15506440bd4c57506f0aaa3, type: 3}
+  - {fileID: 82120349571382985, guid: 5696dce797595b747aac55277592c792, type: 3}
+  - {fileID: 4724360094268792919, guid: 68605f47966f67143b43f20aceca2b2e, type: 3}
+  - {fileID: 8662010079358437726, guid: d4c80fd3dd3c0a94a9b71a7d3efc55da, type: 3}
+  - {fileID: 1094209189198355884, guid: cc844f13bf270c44f8149295d1b381cf, type: 3}
+  tileVerticalOffset: 30
+  tileLength: 950
 --- !u!4 &1516231302
 Transform:
   m_ObjectHideFlags: 0
@@ -728,7 +733,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1573865495
 GameObject:
