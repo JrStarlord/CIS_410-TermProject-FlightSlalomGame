@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.042370036, g: 0.037706017, b: 0.044823453, a: 1}
+  m_IndirectSpecularColor: {r: 0.0032840902, g: 0.0029184225, b: 0.0034862019, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -713,7 +713,7 @@ MonoBehaviour:
   - {fileID: 3520299801214034935, guid: a5f92b5296c1b294e919f7d593140026, type: 3}
   - {fileID: 2864904733189095036, guid: 1a15ac01b0fb92240a702bf965051d32, type: 3}
   - {fileID: 1842273627207472889, guid: 8a86d7b1ba8a9fc4893364b966587cd1, type: 3}
-  Portal: {fileID: 460477550251410021, guid: ea7a3d40e0366fb4d91a3a674724640f, type: 3}
+  tileVerticalOffset: 20
   tileLength: 1000
 --- !u!4 &1516231302
 Transform:
@@ -1109,10 +1109,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660026323}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 913695236764823865, guid: a9e1d66c337394b498df4fa2bc76d8d0, type: 3}
 --- !u!54 &2025144000
@@ -1127,7 +1127,19 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &2025144003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660026323}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

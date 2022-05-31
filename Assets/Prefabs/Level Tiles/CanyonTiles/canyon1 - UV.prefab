@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 3115295554930620217}
   - component: {fileID: 6553776611493891609}
   - component: {fileID: 5045022168110756326}
+  - component: {fileID: 172542510804922572}
   m_Layer: 0
   m_Name: Landscape.008
   m_TagString: Untagged
@@ -256,6 +257,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: -1
   m_Mesh: {fileID: -6749561369117414242, guid: 32cae2e3528f104489d1994474444750, type: 3}
+--- !u!154 &172542510804922572
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861816718949436566}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 0}
+  m_EnableTreeColliders: 1
 --- !u!1 &8354897615480137239
 GameObject:
   m_ObjectHideFlags: 0

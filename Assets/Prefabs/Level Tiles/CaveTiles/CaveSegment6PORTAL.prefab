@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2651635246455653371}
   - component: {fileID: 6014326075236127298}
   - component: {fileID: 626141979226648439}
+  - component: {fileID: 4256785592723446024}
   m_Layer: 0
   m_Name: Torus
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4256785592723446024
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621233755045958049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8803937527578110353, guid: 1570180d0888faf408ec0ea93c6c335c, type: 3}
 --- !u!1 &1622030164214616442
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +140,7 @@ GameObject:
   - component: {fileID: 5114893005488968380}
   - component: {fileID: 3304120106515964360}
   - component: {fileID: 6424370800152066552}
+  - component: {fileID: 7205443395431669613}
   m_Layer: 0
   m_Name: Landscape.003
   m_TagString: Untagged
@@ -197,6 +213,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7205443395431669613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749663235543066452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3089802480582621648, guid: 1570180d0888faf408ec0ea93c6c335c, type: 3}
 --- !u!1 &2633603735614727416
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +238,7 @@ GameObject:
   - component: {fileID: 107846710140571584}
   - component: {fileID: 1499608310950992881}
   - component: {fileID: 115838523170203398}
+  - component: {fileID: 5511514054686053925}
   m_Layer: 0
   m_Name: Landscape
   m_TagString: Untagged
@@ -280,6 +311,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5511514054686053925
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633603735614727416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3237046608918968389, guid: 1570180d0888faf408ec0ea93c6c335c, type: 3}
 --- !u!1 &4449114157889964340
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +421,7 @@ GameObject:
   - component: {fileID: 1922413769593712806}
   - component: {fileID: 748888908294606430}
   - component: {fileID: 6631524510176664877}
+  - component: {fileID: 7432827995740653264}
   m_Layer: 0
   m_Name: Torus.001
   m_TagString: Untagged
@@ -473,6 +519,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff440ca7974f904fadcab7e3acae06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &7432827995740653264
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883316877420071802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5287425419667122880, guid: 1570180d0888faf408ec0ea93c6c335c, type: 3}
 --- !u!1 &6930830757227570415
 GameObject:
   m_ObjectHideFlags: 0
