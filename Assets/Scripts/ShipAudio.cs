@@ -7,6 +7,8 @@ public class ShipAudio : MonoBehaviour
     public AudioSource jetAudio;
     private bool audioPlaying;
 
+    
+
     void Start()
     {
         jetAudio.loop = true;

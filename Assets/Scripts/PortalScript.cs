@@ -5,28 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class PortalScript : MonoBehaviour
 {
+    private Scene scene;
+    private AsyncOperation sceneloader;
+
+    private void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+        sceneloader = SceneManager.LoadSceneAsync("Transition");
+        sceneloader.allowSceneActivation = false;
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            print("TELEPORTED");
-            Scene scene = SceneManager.GetActiveScene();
-            print(scene.name);
-            
-
             switch (scene.name)
             {
                 case "CanyonLevel":
-                    SceneManager.LoadScene("CaveLevel");
+                    TransitionScript.NextLevel = "CaveLevel";
+                    sceneloader.allowSceneActivation = true;
                     break;
 
                 case "CaveLevel":
-                    SceneManager.LoadScene("Level 1 Concept 1");
+                    TransitionScript.NextLevel = "Level 1 Concept 1";
+                    sceneloader.allowSceneActivation = true;
                     break;
 
                 case "Level 1 Concept 1":
                     SceneManager.LoadScene("EndingMenu");
+                    //sceneloader.allowSceneActivation = true;
+
                     break;
 
                 default:
