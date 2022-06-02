@@ -10,14 +10,22 @@ public class MainMenuScript : MonoBehaviour
     public GameObject EndOfLevelMenu;
     public GameObject BackgroundImage;
     public GameObject LevelSelectMenu;
+    public GameObject ShipMenu;
 
     public int SecondsBeforeEndOfLevel;
     private bool InvertControls = false;
+
+    public GameObject ship1;
+    public GameObject ship2;
+    public GameObject ship3;
+
+    public static GameObject CurrentShip;
 
 
     void Start()
     {
         Time.timeScale = 0;
+        CurrentShip = ship1;
         MainMenuButton();
     }
 
@@ -42,6 +50,7 @@ public class MainMenuScript : MonoBehaviour
         OptionsMenu.SetActive(false);
         EndOfLevelMenu.SetActive(false);
         LevelSelectMenu.SetActive(false);
+        ShipMenu.SetActive(false);
         
     }
 
@@ -56,6 +65,13 @@ public class MainMenuScript : MonoBehaviour
         MainMenu.SetActive(false);
         LevelSelectMenu.SetActive(true);
     }
+
+    public void ShipMenuButton()
+    {
+        MainMenu.SetActive(false);
+        ShipMenu.SetActive(true);
+    }
+
 
 
     public void LevelSelect(int level)
@@ -75,6 +91,28 @@ public class MainMenuScript : MonoBehaviour
             case 3:
                 Time.timeScale = 1;
                 // load third level scene
+                break;
+
+            default:
+                break;
+        }
+    }
+
+
+    public void ShipSelect(int ship)
+    {
+        switch (ship)
+        {
+            case 1:
+                CurrentShip = ship1;
+                break;
+
+            case 2:
+                CurrentShip = ship2;
+                break;
+
+            case 3:
+                CurrentShip = ship3;
                 break;
 
             default:

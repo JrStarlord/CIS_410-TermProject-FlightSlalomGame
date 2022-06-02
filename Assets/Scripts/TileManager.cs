@@ -16,9 +16,25 @@ public class TileManager : MonoBehaviour
     private int lastPrefabIndex = 0;
 
     private int tileCount = 0;
+    public GameObject BackupShip;
 
     void Start()
     {
+        GameObject playerBox = GameObject.Find("PlayerBox");
+
+        var CurrentShip = MainMenuScript.CurrentShip;
+        if (CurrentShip == null)
+        {
+            CurrentShip = BackupShip;
+        }
+
+        GameObject ship = Instantiate(CurrentShip);
+        ship.transform.SetParent(playerBox.transform);
+
+
+
+
+
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
         for (int i = 0; i < numTilesOnScreen; i++)
