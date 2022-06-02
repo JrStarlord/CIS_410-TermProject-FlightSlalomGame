@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipForward : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 25.0f;
 
     // Start is called before the first frame update
     void Start()

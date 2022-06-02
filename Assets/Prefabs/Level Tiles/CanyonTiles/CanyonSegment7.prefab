@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 7266472450085777547}
   - component: {fileID: 4447541142087633910}
   - component: {fileID: 6080324346914236494}
+  - component: {fileID: 163784374368587876}
   m_Layer: 0
   m_Name: Landscape.001
   m_TagString: Untagged
@@ -202,6 +203,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &163784374368587876
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875548947341773829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7453770956514601984, guid: 56ef796523b82ea41b98ad035e3a0ff4, type: 3}
 --- !u!1 &5008268298360192734
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +228,7 @@ GameObject:
   - component: {fileID: 6950083219403396582}
   - component: {fileID: 8485674569583804887}
   - component: {fileID: 6960044232232107296}
+  - component: {fileID: 5382110266552899986}
   m_Layer: 0
   m_Name: Landscape
   m_TagString: Untagged
@@ -285,6 +301,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5382110266552899986
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008268298360192734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3237046608918968389, guid: 56ef796523b82ea41b98ad035e3a0ff4, type: 3}
 --- !u!1 &6764436606264885940
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +326,7 @@ GameObject:
   - component: {fileID: 5374996184981502558}
   - component: {fileID: 2628789472509836645}
   - component: {fileID: 7890654054695363727}
+  - component: {fileID: 1137895778127791244}
   m_Layer: 0
   m_Name: Landscape.002
   m_TagString: Untagged
@@ -368,6 +399,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1137895778127791244
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6764436606264885940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7896541262103531020, guid: 56ef796523b82ea41b98ad035e3a0ff4, type: 3}
 --- !u!1001 &5318581649137511161
 PrefabInstance:
   m_ObjectHideFlags: 0
