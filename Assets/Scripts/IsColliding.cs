@@ -20,11 +20,14 @@ public class IsColliding : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "shot")
+        if (other.tag != "portal")
         {
-            print(other);
-            Instantiate(explosion, gameObject.transform);
-            Destroy(gameObject);
+            if (other.tag != "shot")
+            {
+                Instantiate(explosion, gameObject.transform);
+                Destroy(gameObject);
+            }
+
         }
 
     }

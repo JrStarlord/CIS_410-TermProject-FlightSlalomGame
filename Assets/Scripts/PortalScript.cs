@@ -6,13 +6,10 @@ using UnityEngine.SceneManagement;
 public class PortalScript : MonoBehaviour
 {
     private Scene scene;
-    private AsyncOperation sceneloader;
 
     private void Start()
     {
         scene = SceneManager.GetActiveScene();
-        sceneloader = SceneManager.LoadSceneAsync("Transition");
-        sceneloader.allowSceneActivation = false;
 
     }
 
@@ -24,23 +21,22 @@ public class PortalScript : MonoBehaviour
             {
                 case "OpeningLevel":
                     TransitionScript.NextLevel = "CanyonLevel";
-                    sceneloader.allowSceneActivation = true;
+                    SceneManager.LoadScene("Transition");
                     break;
 
                 case "CanyonLevel":
                     TransitionScript.NextLevel = "CaveLevel";
-                    sceneloader.allowSceneActivation = true;
+                    SceneManager.LoadScene("Transition");
                     break;
 
                 case "CaveLevel":
-                    TransitionScript.NextLevel = "Level 1 Concept 1";
-                    sceneloader.allowSceneActivation = true;
+                    TransitionScript.NextLevel = "SpaceLevel";
+                    SceneManager.LoadScene("Transition");
                     break;
 
-                case "Level 1 Concept 1":
-                    SceneManager.LoadScene("EndingMenu");
-                    //sceneloader.allowSceneActivation = true;
-
+                case "SpaceLevel":
+                    TransitionScript.NextLevel = "CanyonLevel";
+                    SceneManager.LoadScene("Transition");
                     break;
 
                 default:
