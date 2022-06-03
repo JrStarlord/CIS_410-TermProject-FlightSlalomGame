@@ -871,6 +871,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tags:
+  - GroundTile
+  - Enemy
+  - Boss
   explosion: {fileID: 9153288411683390442, guid: d88d9020128b62c4b8c0633794e8aa26, type: 3}
 --- !u!1001 &2007437962927093747
 PrefabInstance:
@@ -1200,8 +1204,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
       propertyPath: m_Lightmapping
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
@@ -1217,6 +1229,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8398393378137052528}
     m_Modifications:
+    - target: {fileID: 809859415076684808, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809859415076684808, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056914615273402225, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056914615273402225, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2487544418777516600, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
       propertyPath: m_Name
       value: reticle
@@ -1281,6 +1309,30 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5456740210150744064, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456740210150744064, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201773375765590974, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201773375765590974, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315157999560404632, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315157999560404632, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
 --- !u!4 &6640363453156074351 stripped
@@ -1295,6 +1347,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8398393378137052528}
     m_Modifications:
+    - target: {fileID: 809859415076684808, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809859415076684808, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056914615273402225, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056914615273402225, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2487544418777516600, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
       propertyPath: m_Name
       value: reticle (1)
@@ -1345,6 +1413,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4145221607872910616, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456740210150744064, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456740210150744064, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201773375765590974, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7201773375765590974, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315157999560404632, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315157999560404632, guid: 033d3b7c7b4378744b00fed71705d0d5, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

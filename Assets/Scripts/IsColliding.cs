@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IsColliding : MonoBehaviour
 {
+    public string[] tags;
     public GameObject explosion;
 
     // Start is called before the first frame update
@@ -20,11 +21,11 @@ public class IsColliding : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "portal")
+        foreach(string tag in tags)
         {
-            if (other.tag != "shot")
+            if (other.tag == tag)
             {
-                Instantiate(explosion, gameObject.transform);
+                Instantiate(explosion, transform.position, Random.rotation);
                 Destroy(gameObject);
             }
 

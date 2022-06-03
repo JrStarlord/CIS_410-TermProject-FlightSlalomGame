@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3703461017877611749}
   - component: {fileID: 5034320597624322592}
   - component: {fileID: 5814640455667782572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shots
   m_TagString: shot
   m_Icon: {fileID: 0}
@@ -127,4 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tags:
+  - Enemy
+  - Boss
+  - playerProjectile
   explosion: {fileID: 9153288411683390442, guid: d88d9020128b62c4b8c0633794e8aa26, type: 3}

@@ -16,8 +16,8 @@ TagManager:
   - GroundTile
   - playerProjectile
   - PostProcessing
-  - 
-  - 
+  - Enemy
+  - Boss
   - 
   - 
   - 

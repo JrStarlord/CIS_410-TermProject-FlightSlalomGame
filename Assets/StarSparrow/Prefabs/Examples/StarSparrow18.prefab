@@ -658,10 +658,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5070094235016116159}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 913695236764823865, guid: a9e1d66c337394b498df4fa2bc76d8d0, type: 3}
 --- !u!114 &753559354
@@ -690,6 +690,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tags:
+  - GroundTile
+  - Enemy
+  - Boss
   explosion: {fileID: 9153288411683390442, guid: d88d9020128b62c4b8c0633794e8aa26, type: 3}
 --- !u!1 &5379141489483319735
 GameObject:
@@ -1414,8 +1418,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
       propertyPath: m_Lightmapping
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
