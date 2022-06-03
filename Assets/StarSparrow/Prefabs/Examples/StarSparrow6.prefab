@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 701888356}
   - component: {fileID: 701888355}
   - component: {fileID: 701888357}
+  - component: {fileID: 130191894478839602}
   m_Layer: 0
   m_Name: StarSparrow6
   m_TagString: Player
@@ -137,6 +138,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   invert: -1
+--- !u!114 &130191894478839602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734771206656390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 9153288411683390442, guid: d88d9020128b62c4b8c0633794e8aa26, type: 3}
 --- !u!1 &574565713136896465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6475,8 +6489,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
+      propertyPath: m_Range
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8896764470047393280, guid: d7e5775ab5a5d5f4bbe69d94a2f50f90, type: 3}
       propertyPath: m_SpotAngle

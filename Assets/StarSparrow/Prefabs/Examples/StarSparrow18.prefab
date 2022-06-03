@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 753559353}
   - component: {fileID: 753559352}
   - component: {fileID: 753559354}
+  - component: {fileID: 5422883712402553279}
   m_Layer: 0
   m_Name: StarSparrow18
   m_TagString: Player
@@ -677,6 +678,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   invert: -1
+--- !u!114 &5422883712402553279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5070094235016116159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 9153288411683390442, guid: d88d9020128b62c4b8c0633794e8aa26, type: 3}
 --- !u!1 &5379141489483319735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7622154886979639093, guid: 9d3d8d848bd0d7c4da1502a26cf39c9f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 5.38
       objectReference: {fileID: 0}
     - target: {fileID: 7622154886979639093, guid: 9d3d8d848bd0d7c4da1502a26cf39c9f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1497,7 +1511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7622154886979639093, guid: 9d3d8d848bd0d7c4da1502a26cf39c9f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 5.3800006
       objectReference: {fileID: 0}
     - target: {fileID: 7622154886979639093, guid: 9d3d8d848bd0d7c4da1502a26cf39c9f, type: 3}
       propertyPath: m_LocalRotation.w

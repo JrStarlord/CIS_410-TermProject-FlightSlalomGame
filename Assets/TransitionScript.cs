@@ -46,7 +46,7 @@ public class TransitionScript : MonoBehaviour
         if (Timer > WaitTime)
         {
             //sceneloader.allowSceneActivation = true;
-            SceneManager.LoadScene(NextLevel);
+            SceneManager.LoadScene("LoadingScreen");
         }
     }
 

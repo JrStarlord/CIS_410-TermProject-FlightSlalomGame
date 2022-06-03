@@ -735,6 +735,7 @@ GameObject:
   - component: {fileID: 758487480}
   - component: {fileID: 758487479}
   - component: {fileID: 758487481}
+  - component: {fileID: 4637552182743893216}
   m_Layer: 0
   m_Name: StarSparrow16
   m_TagString: Player
@@ -858,6 +859,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   invert: -1
+--- !u!114 &4637552182743893216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9207265202862182346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97efc6bed54f54da7b9f87892be61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 9153288411683390442, guid: d88d9020128b62c4b8c0633794e8aa26, type: 3}
 --- !u!1001 &2007437962927093747
 PrefabInstance:
   m_ObjectHideFlags: 0
