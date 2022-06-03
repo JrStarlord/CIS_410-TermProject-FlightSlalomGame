@@ -22,6 +22,11 @@ public class PortalScript : MonoBehaviour
         {
             switch (scene.name)
             {
+                case "OpeningLevel":
+                    TransitionScript.NextLevel = "CanyonLevel";
+                    sceneloader.allowSceneActivation = true;
+                    break;
+
                 case "CanyonLevel":
                     TransitionScript.NextLevel = "CaveLevel";
                     sceneloader.allowSceneActivation = true;

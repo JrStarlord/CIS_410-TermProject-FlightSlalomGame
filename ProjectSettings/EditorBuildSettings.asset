@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ede8bb0a72dbf8249bc716fecc44f670
   - enabled: 1
+    path: Assets/Scenes/OpeningLevel.unity
+    guid: f2532192c95072a4092d7fa4b3f38e7d
+  - enabled: 1
     path: Assets/Scenes/CanyonLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
