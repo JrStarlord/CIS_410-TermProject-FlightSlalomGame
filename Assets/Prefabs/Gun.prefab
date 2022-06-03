@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 5034320597624322592, guid: eadfc643ba8515c44a5f00a13c2ea50a, type: 3}
-  velocity: 5000
+  velocity: 500
