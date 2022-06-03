@@ -32,10 +32,7 @@ public class MainMenuScript : MonoBehaviour
     public void PlayNowButton()
     {
         Time.timeScale = 1;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("CanyonLevel");
-        /*MainMenu.SetActive(false);
-        BackgroundImage.SetActive(false);
-        Time.timeScale = 1;*/
+        UnityEngine.SceneManagement.SceneManager.LoadScene("OpeningLevel");
     }
 
     public void OptionsButton()
